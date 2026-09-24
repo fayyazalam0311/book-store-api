@@ -9,8 +9,5 @@
         public string AuthorName { get; set; } = string.Empty;
         public string CategoryName { get; set; } = string.Empty;
 
-
-        public AuthorDto? Author { get; set; }
-        public CategoryDto? Category { get; set; }
     }
 }
