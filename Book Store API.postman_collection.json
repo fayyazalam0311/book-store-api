@@ -1,0 +1,423 @@
+{
+  "info": {
+    "_postman_id": "9fb28c8c-c551-4b94-9c4e-f243eed966ed",
+    "name": "Book Store API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58478597",
+    "_collection_link": "https://go.postman.co/collection/58478597-9fb28c8c-c551-4b94-9c4e-f243eed966ed?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Categories",
+      "item": [
+        {
+          "name": "Get All Categories",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7234/api/Categories",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7234",
+              "path": [
+                "api",
+                "Categories"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Category By Id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7234/api/Categories/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7234",
+              "path": [
+                "api",
+                "Categories",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Category",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Fiction\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7234/api/Categories",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7234",
+              "path": [
+                "api",
+                "Categories"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Category",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Fiction Updated\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7234/api/Categories/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7234",
+              "path": [
+                "api",
+                "Categories",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Category",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7234/api/Categories/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7234",
+              "path": [
+                "api",
+                "Categories",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Authors",
+      "item": [
+        {
+          "name": "Get All Authors",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7234/api/Authors",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7234",
+              "path": [
+                "api",
+                "Authors"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Author By Id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7234/api/Authors/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7234",
+              "path": [
+                "api",
+                "Authors",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Author",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Frank Herbert\",\r\n  \"country\": \"USA\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7234/api/Authors",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7234",
+              "path": [
+                "api",
+                "Authors"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Author",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Frank Herbert Updated\",\r\n  \"country\": \"USA\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7234/api/Authors/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7234",
+              "path": [
+                "api",
+                "Authors",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Author",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7234/api/Authors/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7234",
+              "path": [
+                "api",
+                "Authors",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Books",
+      "item": [
+        {
+          "name": "Get All Books (Default)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7234/api/Books",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7234",
+              "path": [
+                "api",
+                "Books"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Books (Search & Paginated)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7234/api/Books?search=dune&page=1&pageSize=5",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7234",
+              "path": [
+                "api",
+                "Books"
+              ],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "dune"
+                },
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "pageSize",
+                  "value": "5"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Book By Id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7234/api/Books/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7234",
+              "path": [
+                "api",
+                "Books",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Book",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"Dune\",\r\n  \"isbn\": \"9780441172719\",\r\n  \"publishedYear\": 1965,\r\n  \"authorId\": 2,\r\n  \"categoryId\": 5\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7234/api/Books",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7234",
+              "path": [
+                "api",
+                "Books"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Book",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"title\": \"Dune Messiah\",\r\n  \"isbn\": \"9780441172719\",\r\n  \"publishedYear\": 1969,\r\n  \"authorId\": 2,\r\n  \"categoryId\": 5\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://localhost:7234/api/Books/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7234",
+              "path": [
+                "api",
+                "Books",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Book",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "https://localhost:7234/api/Books/1",
+              "protocol": "https",
+              "host": [
+                "localhost"
+              ],
+              "port": "7234",
+              "path": [
+                "api",
+                "Books",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
