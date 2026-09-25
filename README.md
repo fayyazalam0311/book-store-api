@@ -80,3 +80,8 @@ A RESTful API built with ASP.NET Core, Entity Framework Core, and SQL Server, ma
 - Add JWT authentication and role-based authorization
 - Add unit tests
 - Deploy to a cloud environment
+
+
+## Postman Collection
+
+A Postman collection (`BookStoreApi.postman_collection.json`) is included in this repository, covering all CRUD endpoints for Categories, Authors, and Books, including search and pagination examples. Import it into Postman to test the API directly.
